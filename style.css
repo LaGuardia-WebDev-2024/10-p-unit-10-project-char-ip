@@ -16,7 +16,7 @@ body {
 #myCanvas2 {
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
-  background-image: url("waldo.png");
+  background-image: url("bg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
