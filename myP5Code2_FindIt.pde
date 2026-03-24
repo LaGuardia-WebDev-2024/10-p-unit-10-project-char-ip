@@ -1,12 +1,12 @@
 
 var starXPos = [];
 var starYPos = [];
-var star = "⭐️";
+var star = loadImage("waldo.png"); 
 var starTotal = 100;
 
 var planetXPos = [];
 var planetYPos = [];
-var planet = "🪐";
+var planet = loadImage("waldo.png"); 
 var planetTotal = 3;
 var planetFound = 0;
 
@@ -43,7 +43,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100);
+  background(100,100,100,0);
 
   fill(200,200,0);
   textSize(20);
