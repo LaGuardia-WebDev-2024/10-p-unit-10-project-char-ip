@@ -1,5 +1,5 @@
 body {
-  background-color: hsl(213, 85%, 92%);
+  background-color: hsl(236, 100%, 72%);
   background-blend-mode: overlay;
   text-align: center;
   background-size: cover;
@@ -16,7 +16,7 @@ body {
 #myCanvas2 {
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
-  background-image: url("bg.jpeg");
+  background-image: url("bgs.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

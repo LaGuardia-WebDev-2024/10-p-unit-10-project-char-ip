@@ -1,12 +1,16 @@
+let img;
+function preload() {
+  img = loadImage('image.png');
+}
 
 var starXPos = [];
 var starYPos = [];
-var star = loadImage("waldo.png"); 
+var star = "🙍"; 
 var starTotal = 100;
 
 var planetXPos = [];
 var planetYPos = [];
-var planet = loadImage("waldo.png"); 
+var planet = "🙋"; 
 var planetTotal = 3;
 var planetFound = 0;
 
@@ -15,6 +19,7 @@ setup = function() {
 
    reset();
 }
+
 
 draw = function(){   
 
@@ -32,6 +37,21 @@ mouseClicked = function(){
   check(mouseX, mouseY);
 }
 
+
+//while loop -----------------------
+
+
+
+//for loop -------------------------
+
+
+
+//new array ------------------------
+
+
+
+
+
 var check = function(xClick, yClick){
   for(var i = 0; i < planetXPos.length; i++){
     if(dist(xClick - 5, yClick - 5, planetXPos[i], planetYPos[i])<15){
@@ -43,7 +63,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100,0);
+  background(100,100,100,40);
 
   fill(200,200,0);
   textSize(20);
