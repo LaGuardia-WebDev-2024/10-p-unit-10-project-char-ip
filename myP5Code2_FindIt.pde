@@ -29,6 +29,14 @@ draw = function(){
     }
    }
 
+//technically a new key pressed !?>>>>??? ------------------
+   if(keyPressed){
+    if(key =='e'){
+      textSize(100);
+      text("🇪", 0,10);
+    }
+   }
+
   display();
 }
 
@@ -36,19 +44,6 @@ draw = function(){
 mouseClicked = function(){
   check(mouseX, mouseY);
 }
-
-
-//while loop -----------------------
-
-
-
-//for loop -------------------------
-
-
-
-//new array ------------------------
-
-
 
 
 
@@ -86,7 +81,31 @@ var display = function(){
     textSize(50);
     text("Press 'r' to restart \nthe game", 50, 200);
   }
+
+//while loop ---------------------------------------------
+
+var w = 30;
+while (w < 550) {
+  textSize(40);
+  text("💥", w, 300);
+  w += 80;
 }
+
+//for loop -----------------------------------------------
+
+for (var f = 30; f < 550; f += 100){
+  text("🗿", f, 60);
+}
+
+//new array ----------------------------------------------
+
+textSize(30);
+text (emojis[0], 30, 200);
+text (emojis[1], 440, 102);
+text (emojis[2], 258, 320);
+
+}
+var emojis = ["🐥", "🍅", "🎏"]
 
 var reset = function(){
   starXPos = [];
